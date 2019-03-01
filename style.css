@@ -12,25 +12,32 @@ body {
 
 /* Slider */
 .gexagon {
-width: 200px;
-height: 300px;
-background-color: #cccc;
+display: inline-block;
+width: 180px;
+height: 210px;
+visibility: hidden;
 margin: 20px;
-border: 1px solid #000;
-
+transform: rotate(120deg);
+overflow: hidden;
 
 }
 .hex-layer-1 {
 	width: 100%;
 	height: 100%;
-	background: #cccc;
-	transform: rotate(120deg);
+	visibility: hidden;
+	transform: rotate(-60deg);
+	overflow: hidden;
 }
 .hex-layer-2 {
 	width: 100%;
 	height: 100%;
-	background: #cccc;
-	transform: rotate(120deg);
+	background: #cccf;
+	transform: rotate(-60deg);
+  overflow: hidden;
+  visibility: visible;
+  background-image: url('img/1.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 
