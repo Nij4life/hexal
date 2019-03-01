@@ -16,10 +16,10 @@ display: inline-block;
 width: 180px;
 height: 210px;
 visibility: hidden;
-margin: 20px;
+margin: 9px;
 transform: rotate(120deg);
 overflow: hidden;
-
+transition: transform 1s ease-in;
 }
 .hex-layer-1 {
 	width: 100%;
@@ -35,12 +35,63 @@ overflow: hidden;
 	transform: rotate(-60deg);
   overflow: hidden;
   visibility: visible;
-  background-image: url('img/1.png');
   background-repeat: no-repeat;
   background-position: 50%;
 }
-
-
+.gexagon:hover {
+  transform: rotate(-240deg);
+  transition: transform 2s ease-in;
+}
+.row-hexagon-1 .gexagon {
+  position: relative;
+  left: 100px;
+}
+.row-hexagon-2 .gexagon {
+  position: relative;
+  top: -60px;
+  
+}
+.row-hexagon-3 .gexagon {
+  position: relative;
+  left: 100px;
+  top: -120px;
+}
+.gexagon-1 .hex-layer-2 {
+  background-image: url('img/1.png');
+}
+.gexagon-2 .hex-layer-2 {
+  background-image: url('img/2.png');
+}
+.gexagon-3 .hex-layer-2 {
+  background-image: url('img/3.png');
+}
+.gexagon-4 .hex-layer-2 {
+  background-image: url('img/4.png');
+}
+.gexagon-5 .hex-layer-2 {
+  background-image: url('img/5.png');
+}
+.gexagon-6 .hex-layer-2 {
+  background-image: url('img/6.png');
+}
+.gexagon-7 .hex-layer-2 {
+  background-image: url('img/7.png');
+}
+.gexagon-8 .hex-layer-2 {
+  background-image: url('img/8.png');
+}
+.gexagon-9 .hex-layer-2 {
+  background-image: url('img/9.png');
+}
+.gexagon-10 .hex-layer-2 {
+  background-image: url('img/10.png');
+}
+.gexagon-11 .hex-layer-2 {
+  background-image: url('img/11.png');
+}
+.gexagon-12 .hex-layer-2 {
+  background-image: url('img/12.png');
+}
 /* Blog */
 
 
