@@ -11,6 +11,11 @@ body {
 
 
 /* Slider */
+
+/* зафиксировал через min-w , если будет время переделать мб через м-запросы */
+.hexagon-container {
+  min-width: 900px;
+}
 .gexagon {
 display: inline-block;
 width: 180px;
