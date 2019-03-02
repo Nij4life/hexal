@@ -7,14 +7,31 @@ body {
 }
 
 /* Header */
-
+.header {
+  height: 63px;
+  background: #323232;
+ 
+}
+.header h1 {
+  visibility: hidden;
+}
+.header .nav {
+width: 400px;
+margin: 0 auto;
+}
+.header .nav a {
+  text-decoration: none;
+  font-size: 7.21379pt;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 
 /* Slider */
 
 /* зафиксировал через min-w , если будет время переделать мб через м-запросы */
 .hexagon-container {
-  min-width: 900px;
+min-width: 900px;
 }
 .gexagon {
 display: inline-block;
@@ -96,6 +113,9 @@ transition: transform 1s ease-in;
 }
 .gexagon-12 .hex-layer-2 {
   background-image: url('img/12.png');
+}
+.gexagon-13 .hex-layer-2 {
+  background-image: url('img/13.png');
 }
 /* Blog */
 
