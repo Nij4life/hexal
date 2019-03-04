@@ -6,18 +6,26 @@ body {
 	font-size: 12pt;
 }
 
+.wrapper {
+  width: 1020px;
+}
+
 /* Header */
 .header {
-  height: 63px;
+  height: 62px;
   background: #323232;
- 
-}
-.header h1 {
-  visibility: hidden;
 }
 .header .nav {
 width: 400px;
 margin: 0 auto;
+text-align: center;
+
+}
+.header nav ul {
+  list-style: none;
+}
+.header nav ul li {
+  display: inline-block;
 }
 .header .nav a {
   text-decoration: none;
@@ -30,8 +38,12 @@ margin: 0 auto;
 /* Slider */
 
 /* зафиксировал через min-w , если будет время переделать мб через м-запросы */
+h1 {
+  visibility: hidden;
+  color: #fff;
+}
 .hexagon-container {
-min-width: 900px;
+width: 100%;
 }
 .gexagon {
 display: inline-block;
@@ -64,9 +76,12 @@ transition: transform 1s ease-in;
   transform: rotate(-240deg);
   transition: transform 2s ease-in;
 }
-.row-hexagon-1 .gexagon {
+
+.row-hexagon-1 .gexagon,
+.row-hexagon-3 .gexagon {
   position: relative;
   left: 100px;
+  
 }
 .row-hexagon-2 .gexagon {
   position: relative;
@@ -74,8 +89,6 @@ transition: transform 1s ease-in;
   
 }
 .row-hexagon-3 .gexagon {
-  position: relative;
-  left: 100px;
   margin-top: -55px;
 }
 .gexagon-1 .hex-layer-2 {
