@@ -1,9 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }   
+@font-face {
+  font-family: "Lato regular";
+  src: url(assets/fonts/Lato/Lato-Regular.ttf) format("ttf");
+
+
+}
 body {
-	font-size: 12pt;
+  font-size: 12pt;
 }
 
 .wrapper {
@@ -12,48 +18,67 @@ body {
 
 /* Header */
 .header {
-  height: 62px;
+  height: 63px;
   background: #323232;
 }
+.header h1 {
+  visibility: hidden;
+  font-size: 1px;
+}
 .header .nav {
-width: 400px;
-margin: 0 auto;
-text-align: center;
-
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 .header nav ul {
   list-style: none;
+  
 }
 .header nav ul li {
   display: inline-block;
+  height: 100%;
+  vertical-align: -webkit-baseline-middle;
+  
 }
 .header .nav a {
   text-decoration: none;
   font-size: 7.21379pt;
   color: #fff;
   text-transform: uppercase;
+  z-index: 5;
 }
-
+.header .nav .dot {
+  color: #484c5f;
+  font-size: 1px;
+}
+.header .nav a:hover {
+  color: #2eb398;
+}
+.gexagon-0 {
+  position: relative;
+  top: -190px;
+  z-index: 1;
+}
+.gexagon-0 .hex-layer-2 {
+  background-color: #323232;
+}
 
 /* Slider */
 
 /* зафиксировал через min-w , если будет время переделать мб через м-запросы */
-h1 {
-  visibility: hidden;
-  color: #fff;
-}
+
 .hexagon-container {
 width: 100%;
 }
 .gexagon {
-display: inline-block;
-width: 180px;
-height: 210px;
-visibility: hidden;
-margin: 9px;
-transform: rotate(120deg);
-overflow: hidden;
-transition: transform 1s ease-in;
+  display: inline-block;
+  width: 180px;
+  height: 210px;
+  visibility: hidden;
+  margin: 9px;
+  transform: rotate(120deg);
+  overflow: hidden;
+  transition: transform 1s ease-in;
 }
 .hex-layer-1 {
 	width: 100%;
@@ -92,43 +117,43 @@ transition: transform 1s ease-in;
   margin-top: -55px;
 }
 .gexagon-1 .hex-layer-2 {
-  background-image: url('img/1.png');
+  background-image: url('assets/img/1.png');
 }
 .gexagon-2 .hex-layer-2 {
-  background-image: url('img/2.png');
+  background-image: url('assets/img/2.png');
 }
 .gexagon-3 .hex-layer-2 {
-  background-image: url('img/3.png');
+  background-image: url('assets/img/3.png');
 }
 .gexagon-4 .hex-layer-2 {
-  background-image: url('img/4.png');
+  background-image: url('assets/img/4.png');
 }
 .gexagon-5 .hex-layer-2 {
-  background-image: url('img/5.png');
+  background-image: url('assets/img/5.png');
 }
 .gexagon-6 .hex-layer-2 {
-  background-image: url('img/6.png');
+  background-image: url('assets/img/6.png');
 }
 .gexagon-7 .hex-layer-2 {
-  background-image: url('img/7.png');
+  background-image: url('assets/img/7.png');
 }
 .gexagon-8 .hex-layer-2 {
-  background-image: url('img/8.png');
+  background-image: url('assets/img/8.png');
 }
 .gexagon-9 .hex-layer-2 {
-  background-image: url('img/9.png');
+  background-image: url('assets/img/9.png');
 }
 .gexagon-10 .hex-layer-2 {
-  background-image: url('img/10.png');
+  background-image: url('assets/img/10.png');
 }
 .gexagon-11 .hex-layer-2 {
-  background-image: url('img/11.png');
+  background-image: url('assets/img/11.png');
 }
 .gexagon-12 .hex-layer-2 {
-  background-image: url('img/12.png');
+  background-image: url('assets/img/12.png');
 }
 .gexagon-13 .hex-layer-2 {
-  background-image: url('img/13.png');
+  background-image: url('assets/img/13.png');
 }
 /* Blog */
 
