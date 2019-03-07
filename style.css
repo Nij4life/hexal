@@ -1,87 +1,108 @@
 * {
   margin: 0;
   padding: 0;
-}   
+}              /* добавить остальные шрифты */
 @font-face {
-  font-family: "Lato regular";
+  font-family: 'Lato', sans-serif;
   src: url(assets/fonts/Lato/Lato-Regular.ttf) format("ttf");
-
-
 }
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url(assets/fonts/Lato/Lato-Bold.ttf) format("ttf");
+}
+
+/*  body, wrapper   */
+
 body {
   font-size: 12pt;
+  font-family: 'Lato', sans-serif;
 }
-
+/* Пока не знаю как проверяется верстка пиксель в пиксель исходя от разрешения экрана..., поэтому делаю статику.*/
 .wrapper {
   width: 1020px;
+  margin: auto;
 }
 
+
 /* Header */
+
 .header {
   height: 63px;
   background: #323232;
 }
+/* Если учесть что h1 по заданию должен быть в в header, думаю это лучший вариант*/
 .header h1 {
   visibility: hidden;
-  font-size: 1px;
+  font-size: 3px;
 }
-.header .nav {
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.header nav ul {
-  list-style: none;
-  
-}
-.header nav ul li {
-  display: inline-block;
+.nav {
+  width: 40%;
   height: 100%;
-  vertical-align: -webkit-baseline-middle;
-  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
-.header .nav a {
+.nav ul {
+  list-style: none;
+  z-index: 5;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.nav a {
   text-decoration: none;
   font-size: 7.21379pt;
   color: #fff;
   text-transform: uppercase;
+  word-spacing: -1px; 
   z-index: 5;
 }
-.header .nav .dot {
+.nav-dot {
   color: #484c5f;
-  font-size: 1px;
+  font-size: 5px;
 }
-.header .nav a:hover {
+.nav a:hover {
   color: #2eb398;
 }
-.gexagon-0 {
-  position: relative;
-  top: -190px;
-  z-index: 1;
+.logo {
+  margin: 0 3px 0 3px;
+  align-self: flex-end;
+  z-index: 10;
+  margin-bottom: 2px;
+}
+.header-gexagon {
+  position: absolute;
+  top: -135px;
+  z-index: 0;
 }
 .gexagon-0 .hex-layer-2 {
   background-color: #323232;
 }
+.ul-right {
+  margin-right: -2px;
+}
 
 /* Slider */
 
-/* зафиксировал через min-w , если будет время переделать мб через м-запросы */
-
 .hexagon-container {
 width: 100%;
+margin: 80px 0 50px 0;
 margin-left: 12px;
-margin-top: 80px;
+
 }
 .gexagon {
   display: inline-block;
   width: 180px;
-  height: 208px;
+  height: 210px;
   visibility: hidden;
   margin: 11px 8px;
   transform: rotate(120deg);
   overflow: hidden;
   transition: transform 1s ease-in;
-  
 }
 .hex-layer-1 {
 	width: 100%;
@@ -89,7 +110,7 @@ margin-top: 80px;
 	visibility: hidden;
 	transform: rotate(-60deg);
   overflow: hidden;
-  
+  padding: 0;
 }
 .hex-layer-2 {
 	width: 100%;
@@ -100,27 +121,25 @@ margin-top: 80px;
   visibility: visible;
   background-repeat: no-repeat;
   background-position: 50%;
-  
 }
 .gexagon:hover {
   transform: rotate(-240deg);
   transition: transform 2s ease-in;
 }
-
 .row-hexagon-1 .gexagon,
 .row-hexagon-3 .gexagon {
   position: relative;
   left: 100px;
-  
 }
 .row-hexagon-2 .gexagon {
   position: relative;
   margin-top: -55px;
-  
 }
 .row-hexagon-3 .gexagon {
   margin-top: -55px;
 }
+
+/* Ячейки гексагонов */
 .gexagon-1 .hex-layer-2 {
   background-image: url('assets/img/1.png');
 }
@@ -161,11 +180,26 @@ margin-top: 80px;
 .gexagon-13 .hex-layer-2 {
   background-image: url('assets/img/13.png');
 }
+.slider hr {
+  margin: 10px;
+}
+
+
 /* Blog */
 
-
+.Blog {
+  background-color: #2eb398;
+}
+.Blog article {
+  
+  width: 820px;
+  margin: 12px auto;
+}
 
 /* Footer */
 
+.Get-in-touch {
+  margin: 20px;
+}
 
 
