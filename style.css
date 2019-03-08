@@ -90,10 +90,27 @@ body {
 
 .hexagon-container {
 width: 100%;
-margin: 80px 0 50px 0;
+margin: 79px 0 50px 0;
 margin-left: 12px;
-
 }
+
+.row-hexagon-1 .gexagon,
+.row-hexagon-3 .gexagon {
+  position: relative;
+  left: 100px;
+}
+.row-hexagon-1 {
+  
+}
+.row-hexagon-2 {
+  position: relative;
+  margin-top: -70px;
+}
+.row-hexagon-3 {
+  margin-top: -70px;
+}
+
+
 .gexagon {
   display: inline-block;
   width: 180px;
@@ -126,18 +143,18 @@ margin-left: 12px;
   transform: rotate(-240deg);
   transition: transform 2s ease-in;
 }
-.row-hexagon-1 .gexagon,
-.row-hexagon-3 .gexagon {
-  position: relative;
-  left: 100px;
-}
-.row-hexagon-2 .gexagon {
-  position: relative;
-  margin-top: -55px;
-}
-.row-hexagon-3 .gexagon {
-  margin-top: -55px;
-}
+
+
+
+/* .hex-layer-2::before {
+  background-color: red;
+  position: absolute;
+  z-index: 10;
+  width: 10px;
+  height: 10px;
+  top: 200px;
+} */
+
 
 /* Ячейки гексагонов */
 .gexagon-1 .hex-layer-2 {
