@@ -16,11 +16,13 @@
 body {
   font-size: 12pt;
   font-family: 'Lato', sans-serif;
+  font-weight: normal;
 }
                     /* Пока не знаю как проверяется верстка пиксель в пиксель исходя от разрешения экрана..., поэтому делаю статику.*/
 .wrapper {
   width: 1020px;
   margin: auto;
+  color: #fff;
 }
 
 
@@ -124,7 +126,7 @@ body {
   margin: 0 10px;
   background: #e4e9eb;
 }
-
+/* Немогу понять, почему они меньше гдето на 0.5px там где углы 90 гр. */
 .gexagon {
   display: inline-block;
   width: 180px;
@@ -169,7 +171,7 @@ body {
 }
 .gexagon-4 .hex-layer-2 {
   background-image: url('assets/img/4.png');
-  background-position: 50% 130%;
+  background-position: 50% -16px;
 }
 .gexagon-5 .hex-layer-2 {
   background-image: url('assets/img/5.png');
@@ -207,28 +209,62 @@ body {
   justify-items: flex-start;
   
 }
-.slider-items {
+.slider-item {
   width: 6px;
   height: 6px;
   background: #ddd2c5;
   margin: 7px 3px 11px 0px;
 }
+.temp-item {
+  background: #8b8784;
+}
 
 
 /* Blog */
-
-.Blog {
-  background-color: #2eb398;
+.about {
+  background: #2eb398;
 }
-.Blog article {
-  
+article {
   width: 820px;
-  margin: 12px auto;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px 0px;
+}
+ .about-border {
+  height: 100%;
+  border-left: 1px solid #219d84;
+  border-right: 1px solid #219d84;
+  padding: 1px 1px;
+}
+.about-content {
+margin: 57px 0px;
+}
+.about-foto {
+  display: inline-block;
+  margin: 0px 5px 0px 8px;
+}
+ .gexagon-14 .hex-layer-2 {
+  background: url('assets/img/face.png') no-repeat;
+  background-position: 49% 0px;
+}
+.about-text {
+  display: inline-block;
+  width: 580px;
+  height: 100%;
+} 
+.network-icons {
+  display: flex;
+  flex-direction: row;
+  
+}
+.network-icon {
+  justify-items: flex-end;
 }
 
 /* Footer */
 
-.Get-in-touch {
+.get-in-touch {
+
   margin: 20px;
 }
 
