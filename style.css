@@ -17,7 +17,7 @@ body {
   font-size: 12pt;
   font-family: 'Lato', sans-serif;
 }
-/* Пока не знаю как проверяется верстка пиксель в пиксель исходя от разрешения экрана..., поэтому делаю статику.*/
+                    /* Пока не знаю как проверяется верстка пиксель в пиксель исходя от разрешения экрана..., поэтому делаю статику.*/
 .wrapper {
   width: 1020px;
   margin: auto;
@@ -76,7 +76,7 @@ body {
 }
 .header-gexagon {
   position: absolute;
-  top: -135px;
+  top: -124px;
   z-index: 0;
 }
 .gexagon-0 .hex-layer-2 {
@@ -86,37 +86,51 @@ body {
   margin-right: -2px;
 }
 
+
 /* Slider */
 
 .hexagon-container {
-width: 100%;
-margin: 79px 0 50px 0;
-margin-left: 12px;
+  width: 100%;
+}
+.row-hr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin-bottom: 65px;
+}
+.row-hr div {
+  display: inline-block;
+  width: 410px;
+  margin: 11px 30px;
+  border-bottom: 1px solid #e4e9eb;
 }
 
-.row-hexagon-1 .gexagon,
-.row-hexagon-3 .gexagon {
-  position: relative;
-  left: 100px;
-}
-.row-hexagon-1 {
-  
-}
-.row-hexagon-2 {
-  position: relative;
-  margin-top: -70px;
-}
+.row-hexagon-1,
+.row-hexagon-2,
 .row-hexagon-3 {
-  margin-top: -70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
+.row-hexagon-2,
+.row-hexagon-3 {
+  margin-top: -42px;
+}
+.div-border {
+  display: inline-block;
+  height: 104px;
+  width: 1px;
+  margin: 0 10px;
+  background: #e4e9eb;
+}
 
 .gexagon {
   display: inline-block;
   width: 180px;
   height: 210px;
   visibility: hidden;
-  margin: 11px 8px;
+  margin: 0 10px;
   transform: rotate(120deg);
   overflow: hidden;
   transition: transform 1s ease-in;
@@ -127,7 +141,6 @@ margin-left: 12px;
 	visibility: hidden;
 	transform: rotate(-60deg);
   overflow: hidden;
-  padding: 0;
 }
 .hex-layer-2 {
 	width: 100%;
@@ -143,18 +156,6 @@ margin-left: 12px;
   transform: rotate(-240deg);
   transition: transform 2s ease-in;
 }
-
-
-
-/* .hex-layer-2::before {
-  background-color: red;
-  position: absolute;
-  z-index: 10;
-  width: 10px;
-  height: 10px;
-  top: 200px;
-} */
-
 
 /* Ячейки гексагонов */
 .gexagon-1 .hex-layer-2 {
@@ -197,8 +198,20 @@ margin-left: 12px;
 .gexagon-13 .hex-layer-2 {
   background-image: url('assets/img/13.png');
 }
-.slider hr {
-  margin: 10px;
+.slider-list {
+  margin: 51px 30px 11px;
+  width: 94%;
+  border-bottom: 1px solid #e4e9eb;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  
+}
+.slider-items {
+  width: 6px;
+  height: 6px;
+  background: #ddd2c5;
+  margin: 7px 3px 11px 0px;
 }
 
 
